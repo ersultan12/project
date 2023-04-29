@@ -1,13 +1,13 @@
 <div class="first">
     <h1> Ned_Get </h1>
     <div class="list">
-    <a href="">Новинки</a>
+    <a [routerLink]="['/product-list']">Новинки</a>
     <div class="hh"></div>
-    <a href="">Ноутбук</a>
+    <a [routerLink]="['/product-list']">Ноутбук</a>
     <div class="hh"></div>
-    <a href="">Смартфон</a>
+    <a [routerLink]="['/product-list']">Смартфон</a>
     <div class="hh"></div>
-    <a href="">Наушники</a>
+    <a [routerLink]="['/product-list']">Наушники</a>
     </div>
 </div>
 <div class="second">
@@ -19,8 +19,7 @@
             <div class="desc">
             <h3>
               <a
-              [title]="product.name + ' details'"
-              [routerLink]="['/products', product.id]">
+              [routerLink]="['/products']">
                 {{ product.name }}
               </a>
             </h3>
@@ -31,6 +30,9 @@
             <p *ngIf="product.description" class="description">
               Description: {{ product.description }}
             </p>
+            <a>
+              {{ product.buck }}
+            </a>
           </div>
            
           </div> 

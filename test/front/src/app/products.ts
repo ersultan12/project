@@ -5,6 +5,7 @@ export interface Product{
     description: string;
     img: string[];
     categoryName: string;
+    buck: string;
 }
 
 export const products = [
@@ -18,7 +19,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/he4/hc4/67236396859422.jpg?format=gallery-large",
     "https://resources.cdn-kaspi.kz/img/m/p/hf8/h64/67236400005150.jpg?format=gallery-large",
     "https://resources.cdn-kaspi.kz/img/m/p/h8b/h12/67236400529438.jpg?format=gallery-large"],
-        categoryName: "laptop"
+        categoryName: "laptop",
+        buck: "В корзину"
     },
     {
         id: 2,
@@ -29,7 +31,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/h27/hec/63947824496670.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h16/h90/63947827478558.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/hc3/h83/63947832557598.jpg?format=gallery-medium"],
-    categoryName: "laptop"
+    categoryName: "laptop",
+    buck: "В корзину"
     },
     {
         id: 3,
@@ -40,7 +43,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/hdc/hc5/64479222857758.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/hfb/hcc/64479225413662.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h11/h01/64479293767710.jpg?format=gallery-medium"],
-    categoryName: "laptop"
+    categoryName: "laptop",
+    buck: "В корзину"
     },
     {
         id: 4,
@@ -51,7 +55,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/ha5/hae/64508111912990.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h11/h2e/64508113485854.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/he8/h62/64508118794270.jpg?format=gallery-medium"],
-    categoryName: "smartphone"
+    categoryName: "smartphone",
+    buck: "В корзину"
     },
     {
         id: 5,
@@ -62,7 +67,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/hf3/h78/64208871587870.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/hfe/h17/64208876634142.jpg?format=gallery-medium"],
-    categoryName: "smartphone"
+    categoryName: "smartphone",
+    buck: "В корзину"
     },
     {
         id: 6,
@@ -73,7 +79,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/hed/hb1/63897055559710.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/ha1/h45/63897058377758.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h78/h0f/63897061457950.jpg?format=gallery-medium"],
-    categoryName: "smartphone"
+    categoryName: "smartphone",
+    buck: "В корзину"
     },
     {
         id: 7,
@@ -85,7 +92,8 @@ export const products = [
     "https://resources.cdn-kaspi.kz/img/m/p/hf0/hce/64511118704670.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h22/h14/64511121489950.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h21/h3a/64511124602910.jpg?format=gallery-medium"],
-    categoryName: "headphones"
+    categoryName: "headphones",
+    buck: "В корзину"
     },
     {
         id: 8,
@@ -95,7 +103,8 @@ export const products = [
         img: ["https://resources.cdn-kaspi.kz/img/m/p/hb1/hfc/64013103595550.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/heb/hc1/64013105954846.jpg?format=gallery-medium",
     "https://resources.cdn-kaspi.kz/img/m/p/h1f/h2b/64013108969502.jpg?format=gallery-medium"],
-    categoryName: "headphones"
+    categoryName: "headphones",
+    buck: "В корзину"
     },
     {
         id: 9,
@@ -107,7 +116,8 @@ export const products = [
         "https://resources.cdn-kaspi.kz/img/m/p/h2c/h1e/63894374121502.jpg?format=gallery-medium",
         "https://resources.cdn-kaspi.kz/img/m/p/hf6/h62/63894376906782.jpg?format=gallery-medium",
         "https://resources.cdn-kaspi.kz/img/m/p/h4a/h09/63894380118046.jpg?format=gallery-medium"],
-    categoryName: "headphones"
+    categoryName: "headphones",
+    buck: "В корзину"
     },
 
 ];
