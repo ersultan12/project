@@ -16,6 +16,7 @@
     <div class="products">
         <div *ngFor="let product of products" class="item">
             <img [src]="product.img[0]" [alt]="product.name" width = "254px">
+            <div class="desc">
             <h3>
               <a
               [title]="product.name + ' details'"
@@ -30,6 +31,7 @@
             <p *ngIf="product.description" class="description">
               Description: {{ product.description }}
             </p>
+          </div>
            
           </div> 
 

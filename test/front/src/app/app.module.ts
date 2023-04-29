@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     MainComponent,
     TopBarComponent,
     ProductListComponent,
+    UserLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       { path: '', component: MainComponent},
       { path: 'main', component: TopBarComponent},
       { path: 'product-list', component: ProductListComponent},
+      { path: 'login', component: UserLoginComponent},
     ])
   ],
   providers: [],
