@@ -25,25 +25,31 @@ app-top-bar {
     justify-content: space-between;
     align-items: center;
 }
-
+app-top-bar a{
+    text-decoration: none;
+}
 app-top-bar h1 {
     color: white;
     margin: 0;
     font-size: 20px;
     font-weight: 300;
 }
-app-top-bar a {
-    color: #6c757d;
+app-top-bar button {
+    color: #fff;
     text-decoration: none;
 }
 
-app-top-bar .right a{
+app-top-bar .right button{
     font-weight: 400;
-    padding-right: 1rem;
-    transition: all 0.2s;
+    padding: 0.2rem;
+    margin-left: 0.4rem;
+    transition: all 0.4s;
+    background-color: #343a40;
+
 }
-app-top-bar .right a:hover{
-    color: #fff;
+app-top-bar .right button:hover{
+    color: #343a40;
+    background-color: #fff;
 }
 
 
@@ -77,20 +83,20 @@ app-main button:hover{
 }
 
 
-app-products-page {
+app-product-list {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin: 106px 11rem 0;
 }
-app-products-page .first{
+app-product-list .first{
     display: flex;
     flex-direction: column;
 }
-app-products-page h1{
+app-product-list h1{
     margin-bottom: 20px;
 }
-app-products-page .first .list{
+app-product-list .first .list{
     display: flex;
     flex-direction: column;
     width: 17rem;
@@ -98,49 +104,39 @@ app-products-page .first .list{
     border-radius: 0.3rem;
     border: solid #c3c3c3 0.5px;
 }
-app-products-page a{
+app-product-list a{
     text-decoration: none;
     color: #07f;
 }
-app-products-page .first .list a{
+app-product-list .first .list a{
     padding: 0.8rem 2rem 0.8rem;
     text-decoration: none;
     color: #07f;
 }
-app-products-page .first .list .hh{
+app-product-list .first .list .hh{
     width: 100%;
     height: 0.5px;
     background-color: #c3c3c3;
 }
-app-products-page .second .slide{
+app-product-list .second .slide{
     background-image: url(images/slides/slide-2.jpg);
     width: 50rem;
     height: 30rem;
     background-size: contain;
     background-repeat: no-repeat;
 }
-app-products-page .second .products{
+app-product-list .second .products{
     display: grid;
     gap: 1rem;
     grid-template-columns: 16rem 16rem 16rem;
 }
-app-products-page .second .products .product{
-    background-image: url(images/slides/slide-1.jpg);
+app-product-list .second .products .item{
     width: 16rem;
     height: 30rem;
-    background-size: contain;
-    background-repeat: no-repeat;
     border-radius: 0.3rem;
     border: solid #c3c3c3 0.5px;
     font-size: 14px;
 }
-app-products-page .second .products .product .gg{
-    margin: 12.5rem 1.25rem 12.5rem;
-    font-weight: 400;
-}
-app-products-page .second .products .product a{
-    font-size: 20px;
-}
-app-products-page .second .products .product h2{
-    font-size: 20px;
+app-product-list .second .products .item .price{
+    font-size: 24px;
 }

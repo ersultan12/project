@@ -8,14 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductsPageComponent } from './products-page/products-page.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     TopBarComponent,
-    ProductsPageComponent
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +26,7 @@ import { ProductsPageComponent } from './products-page/products-page.component';
     RouterModule.forRoot([
       { path: '', component: MainComponent},
       { path: 'main', component: TopBarComponent},
-      { path: 'product-page', component: ProductsPageComponent},
+      { path: 'product-list', component: ProductListComponent},
     ])
   ],
   providers: [],

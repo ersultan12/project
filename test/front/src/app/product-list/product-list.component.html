@@ -1,0 +1,57 @@
+<div class="first">
+    <h1> Ned_Get </h1>
+    <div class="list">
+    <a href="">Новинки</a>
+    <div class="hh"></div>
+    <a href="">Ноутбук</a>
+    <div class="hh"></div>
+    <a href="">Смартфон</a>
+    <div class="hh"></div>
+    <a href="">Наушники</a>
+    </div>
+</div>
+<div class="second">
+    <div class="slide">
+    </div>
+    <div class="products">
+        <div *ngFor="let product of products" class="item">
+            <img [src]="product.img[0]" [alt]="product.name" width = "254px">
+            <h3>
+              <a
+              [title]="product.name + ' details'"
+              [routerLink]="['/products', product.id]">
+                {{ product.name }}
+              </a>
+            </h3>
+            <p *ngIf="product.price" class="price">
+                Цена: {{ product.price}} ₸
+            </p>
+          
+            <p *ngIf="product.description" class="description">
+              Description: {{ product.description }}
+            </p>
+           
+          </div> 
+
+
+
+    </div>
+</div>
+
+
+<!-- <div *ngFor="let product of products" class="item">
+
+    <h3>
+      <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+        {{ product.name }}
+      </a>
+    </h3>
+  
+  
+    <p *ngIf="product.description" class="description">
+      Description: {{ product.description }}
+    </p>
+   
+  </div> -->

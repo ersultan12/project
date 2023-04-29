@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Location} from "@angular/common";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-top-bar',
@@ -7,9 +7,12 @@ import {Location} from "@angular/common";
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  constructor(private location: Location) {
+  constructor(private router: Router) {
   }
-  goBack(){
-    this.location.back();
+  btnClick(){
+    this.router.navigateByUrl('/product-list');
+  }
+  login(){
+    this.router.navigateByUrl('/');
   }
 }
